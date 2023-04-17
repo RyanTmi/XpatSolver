@@ -1,0 +1,14 @@
+(env (_ (flags :standard -w -27-26-32-33)))
+(executable (name XpatSolver) (modules XpatSolver) (libraries XpatLib) (modes byte exe))
+(library (libraries unix) (name XpatLib)
+(modules
+  Card
+  CheckGame
+  Fifo
+  Game
+  IOSystem
+  PArray
+  SearchGame
+  State
+  XpatRandom
+))
